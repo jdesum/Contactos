@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.yoso.contactos.ConfirmarDatos">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/view">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Confirmar Datos"
+        android:paddingTop="25dp"
+        android:id="@+id/tvTitulo"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/area_nombre"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitulo"
+        android:paddingTop="25dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/til_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:textSize="15sp"
+            android:text="Nombre:"/>
+
+        <TextView
+            android:id="@+id/campo_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="Nombre"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/area_fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/area_nombre"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/til_fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_marginLeft="32dp"
+            android:textSize="15sp"
+            android:text="Fecha Nacimiento:"/>
+
+        <TextView
+            android:id="@+id/campo_fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="Fecha"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/area_telefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/area_fecha"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/til_telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_marginLeft="32dp"
+            android:textSize="15sp"
+            android:text="Tel.:"/>
+
+        <TextView
+            android:id="@+id/campo_telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="Telefono"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/area_correo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/area_telefono"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/til_correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_marginLeft="32dp"
+            android:textSize="15sp"
+            android:text="Email:"/>
+
+        <TextView
+            android:id="@+id/campo_correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:text="email"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/area_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/area_correo"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/til_descripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:layout_marginLeft="32dp"
+            android:textSize="15sp"
+            android:text="Descripción:"/>
+
+        <TextView
+            android:id="@+id/campo_descripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="15sp"
+            android:text="descripcion"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_editar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:text="Editar Datos"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:layout_marginTop="75dp"
+        android:layout_below="@+id/area_descripcion"
+        android:layout_centerHorizontal="true"
+        android:clickable="true" />
+
+</RelativeLayout>
